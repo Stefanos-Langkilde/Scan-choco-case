@@ -1,11 +1,18 @@
 import './App.css';
+import ImageBanner from "./components/ImageBanner.jsx";
 
 function App() {
+
+  const title = "Welcome to our page!";
+  const txt = "We are happy to have you here.";
+  const imgPath = "https://images.unsplash.com/photo-1626753464298-1a0f3f7e9b4d";
+  const imgAlt = "A beautiful landscape";
+
   return (
     <div className="App">
-      <header className="App-header">
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      </header>
+      <div className="container mx-auto">
+        <ImageBanner headerText={title} text={txt} image_path={imgPath} placeHolderText={imgAlt} />
+      </div>
     </div>
   );
 }
