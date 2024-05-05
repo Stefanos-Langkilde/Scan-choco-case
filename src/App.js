@@ -3,15 +3,18 @@ import ImageBanner from "./components/ImageBanner.jsx";
 
 function App() {
 
-  const title = "Welcome to our page!";
-  const txt = "We are happy to have you here.";
-  const imgPath = "https://images.unsplash.com/photo-1626753464298-1a0f3f7e9b4d";
-  const imgAlt = "A beautiful landscape";
+  const banner =
+    {
+      title: "VORES KONCEPTER",
+      text: "I koncernens søde univers af ideer, slikkepinde af koncepter danser i virksomhedens sfære. Fra smagen af innovation til strategisk sødme.",
+      img_path: "https://anderssonsupply.dk/wp-content/uploads/2023/01/1979-scaled.jpg",
+      imgAlt: "Candy"
+    };
 
   return (
     <div className="App">
-      <div className="container mx-auto">
-        <ImageBanner headerText={title} text={txt} image_path={imgPath} placeHolderText={imgAlt} />
+      <div className="container h-screen flex flex-col items-center justify-center mx-auto">
+        <ImageBanner dict={banner}  />
       </div>
     </div>
   );
